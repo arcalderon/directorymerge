@@ -31,8 +31,7 @@ Step 2: Right Click + 'Run MergeDirectoryFiles'
 
 
 ### Approach
-Decided to use Spark in order to make use of computing power. For big data problems requiring large data sets. It makes
-sense to leverage Sparks' way of handling large amount of data. Loading say one thousand files of a 1GB would have stressed
-a non spark application.
+Decided to use Spark in order to make use of computing power. For big data problems requiring large data sets, it makes
+sense to leverage Sparks' way of handling large amount of data. Loading say one thousand files of a 1GB each would have stressed a non spark application.
 
 
