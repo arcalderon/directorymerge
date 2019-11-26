@@ -30,7 +30,8 @@ object MergeDirectoryFiles extends App {
      val inputFrame = spark.read.text(s"$input_dir/")
 
     // .show() will not print the entire content. This is here just to get a feel of what the top lines are.
-     inputFrame.show()
+    println("This is the input: ")
+    inputFrame.show()
 
     // Preparing dataframe containing a all files, with duplicates and new lines removed then finally sorted.
     val outputFrame = inputFrame .filter(row => row.getAs[String]("value")
@@ -38,6 +39,7 @@ object MergeDirectoryFiles extends App {
 
 
     // .show() will not print the entire content. This is here just to get a feel of what the top lines are.
+    println("This is the solution: ")
     outputFrame.show()
 
     // writing it to the output directory
